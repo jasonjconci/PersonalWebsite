@@ -1,2 +1,0 @@
-# PersonalWebsite
-My personal website!
