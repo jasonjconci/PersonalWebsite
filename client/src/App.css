@@ -1,28 +1,345 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+div.App {
+  font-family: 'Raleway', 'sans-serif'; 
+  src: url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+  height: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  background-color: #081626;
+}
+@media screen and (min-width: 1300px){
+  div.App{
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+@media screen and (max-width: 700px) {
+  div.App {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+body {
+}
+
+
+
+
+.homepage {
+  margin-bottom: 10%;
+  background-color:
+}
+
+div .homepage-one {
   text-align: center;
+
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.avatar {
+  margin: 3vmin;
+  height: 35vmin;
+  width: 35vmin;
+  border-radius: 50%;
+  padding: .5%;
+  border: 1.25vmin solid #f95738;
+}
+@media screen and (max-width: 700px) {
+  .avatar {
+    height: 50vmin;
+    width: 50vmin;
+    padding: 1vmin;
+    border: 1.5vmin solid #f95738;
+  }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+.jumbotron {
+  width: 100%;
+  color: #7996b0;
+  background-color:rgba(0,0,0,0) !important;
+}
+.jumbotron h1 {
+  text-shadow: 1px 1px 5px black;
+  font-size: 6vmin;
+  color: white;
+}
+@media screen and (max-width: 700px){
+  .jumbotron h1 {
+    font-size: 10vmin;
+  }
+}
+.jumbotron span {
+  font-size: 1.7vmin;
+}
+@media screen and (max-width: 700px){
+  .jumbotron span {
+    font-size: 1.7vmax;
+  }
+}
+
+.jumbotron p{
+  font-size: 2.1vmin;
+  color: #7996b0;
+  text-align: right;
+}
+@media screen and (max-width: 700px) {
+  .jumbotron p {
+    font-size: 2.5vmax;
+  }
+}
+.jumbotron hr {
+  border: none;
+  width: 100%;
+  height: 2px;
+  background-color: #3caea3;
+}
+span.jumbotron-p {
+  font-size: 1.4vmax;
+}
+@media screen and (max-width: 700px) {
+  span.jumbotron-p {
+    font-size: 1.6vmax;
+  }
+}
+
+
+
+.section {
+  color: white;
+  margin-top: 3vmin;
+  display: block;
+}
+.section .sect-heading {
+  display: inline-block;
+  margin-top: 3vmax;
+}
+.section .sect-num{
+  color: #57b6d9;
+  margin-right: 5px;
+  font-size: 2vmax;
+}
+.section h4 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.section .sub-title {
+  margin-top: 3vmin;
+  font-size: 2.3vmin;
+}
+.section .sub-content {
+  color: #7996b0;
+  font-size: 1.7vmin;
+}
+.section .sect-p {
+  margin-top: 2vmin;
+  color: #7996b0;
+  font-size: 2vmin;
+}
+@media screen and (max-width: 700px){
+  .section .sect-p{
+    font-size: 2vmax;
+  }
+}
+.section .lists{
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 500px){
+  .section .lists{
+    width: 50%;
+    padding-left: auto;
+    padding-right: auto;
+  }
+}
+.section ul {
+  margin-right: 50%;
+  font-size: 2vmin;
+}
+@media screen and (max-width: 700px){
+  .section ul {
+    margin-right: 10%;
+    font-size: 2vmax;
+  }
+}
+.section ul li {
+  color: #7996b0;
+  width: 100%;
+}
+.section .projects{
+  max-width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.section .card {
+  background-color: #172a45;
+  width: calc(33.33333% - 10px);
+  top: 0px;
+  margin: 5px;
+}
+.section .card:hover{
+  box-shadow: 1px 1px 10px rgba(0,0,0,.3);
+  top: -4px;
+  transition: top ease .2s;
+}
+@media screen and (max-width: 1000px){
+  .section .card {
+    width: calc(50% - 10px);
+  }
+}
+@media screen and (max-width: 700px){
+  .section .card {
+    width: 100%;
+  }
+}
+.section .card-wrapper .img{
+  color: #5a7b99;
+  width: 100%;
+  font-size: 3vmin;
+  padding-bottom: 10px;
+}
+.section .card-wrapper .img a{
+  color: white;
+  font-size: 2.2vmin;
+  position: absolute;
+  right: 10px;
+}
+.section .card-wrapper .img a:hover{
+  color: #b744b8;
+}
+.section .card-wrapper p{
+  font-size: 1.5vmin;
+  color: #7996b0;
+}
+@media screen and (max-width: 700px){
+  .section .card-wrapper p{
+    font-size: 1.5vmax;
+  }
+}
+.section .card-wrapper {
+  padding: 10px;
+  padding-bottom: 30px;
+}
+.section .card span {
+  color: #4c6e8b;
+  font-size: 1.2vmin;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+@media screen and (max-width: 700px){
+  .section .card span {
+    font-size: 2vmin;
+  }
 }
 
+
+
+
+
+#about-hr {
+  border: none;
+  height: 2px;
+  background-color: #ef5378;
+}
+#projects-hr {
+  border: none;
+  height: 2px;
+  background-color: #b744b8;
+}
+#contact-hr{
+  border: none;
+  height: 2px;
+  background-color: #279af1;
+}
+
+
+
+
+
+
+.footer {
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+.footer .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .container span {
+  font-size: 3vmin;
+  color: #4e7497;
+
+}
+@media screen and (max-width: 600px) {
+  .footer span {
+    font-size: 4vmin;
+  }
+}
+
+.footer a {
+  font-size: 3vmin;
+  margin-right: 1vmin;
+  margin-left: 1vmin;
+  color: #4e7497;
+  vertical-align: text-bottom;
+}
+@media screen and (max-width: 600px) {
+  .footer a {
+    font-size: 4vmin;
+  }
+}
+
+.footer a:hover {
+  color: #f95738;
+}
+
+.footnote {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2vmax;
+  color: #173f5f;
+}
+/*
+
+
+.homepage-three{
+  background-color:#3caea3;
+  height: 100%;
+}
+.homepage-four{
+  background-color: #20639b;
+  height: 100%;
+}
+.homepage-five{
+  background-color: #173f5f;
+  height: 100%;
+}
+
+.a:hover {
+  color: #f95738;
+  text-decoration: none;
+}
+
+div.media {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+div.media .media-heading .jobTotalDuration {
+  color: #666;
+  font-size: 14px;
+  display: block;
+}
+
+*/
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

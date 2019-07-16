@@ -1,13 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import Header from './components/header.js';
 import './App.css';
+
+import HeaderTwo from './components/HeaderTwo.js';
+import Footer from './components/Footer.js';
+import Routes from './components/Routes';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-
+      <Router className="router">
+        <HeaderTwo style={{width: "100%"}}/>
+        <Routes />
+        <Footer />
+      </Router>
     </div>
   );
 }
